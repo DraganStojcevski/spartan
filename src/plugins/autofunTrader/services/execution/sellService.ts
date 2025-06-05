@@ -446,7 +446,7 @@ export class SellService extends BaseTradeService {
       currentBalance: walletBalance.toString(), // Assuming walletBalance is SOL balance
       walletAddress: wallet.publicKey.toBase58(), // Access publicKey on the resolved wallet object
       isSimulation: false,
-      sellRecommenderId: 'spartan-trader',
+      sellRecommenderId: 'hash-hunter-trader',
       reason: params.reason || 'N/A',
     };
 

@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
  * Test suite for the Investment Manager agent
  * Tests portfolio management and financial operations
  */
-export class SpartanTestSuite implements TestSuite {
+export class HashHunterTestSuite implements TestSuite {
   name = 'investment-manager';
   description = 'Tests for the investment manager agent';
   private scenarioService: any;

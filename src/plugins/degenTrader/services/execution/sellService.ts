@@ -44,7 +44,7 @@ export class SellService extends BaseTradeService {
 
   async initialize(): Promise<void> {
     logger.info('Initializing sell service');
-    this.runtime.registerEvent('SPARTAN_TRADE_SELL_SIGNAL', this.handleSellSignal.bind(this));
+    this.runtime.registerEvent('HASH_HUNTER_TRADE_SELL_SIGNAL', this.handleSellSignal.bind(this));
   }
 
   async stop(): Promise<void> {

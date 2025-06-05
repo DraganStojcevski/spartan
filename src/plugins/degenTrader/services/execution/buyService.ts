@@ -39,7 +39,7 @@ export class BuyService extends BaseTradeService {
 
   async initialize(): Promise<void> {
     logger.info('Initializing buy service');
-    this.runtime.registerEvent('SPARTAN_TRADE_BUY_SIGNAL', this.handleBuySignal.bind(this));
+    this.runtime.registerEvent('HASH_HUNTER_TRADE_BUY_SIGNAL', this.handleBuySignal.bind(this));
   }
 
   async stop(): Promise<void> {

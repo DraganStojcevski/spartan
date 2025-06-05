@@ -1,0 +1,18 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Wallet {
+  id         Int      @id @default(autoincrement())
+  userId     String
+  publicKey  String
+  privateKey String   // Will be encrypted manually
+  createdAt  DateTime @default(now())
+}
